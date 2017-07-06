@@ -1,0 +1,50 @@
+<!DOCTYPE >
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Jai Mata Jhondi -- Vikas Anand</title>
+	   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	  <script src="lib/jquery-2.2.1.min.js"></script>	   
+      <script src="lib/angular.js"></script>
+      <script src="lib/angular-route.js"></script>
+      <script src="com/module/app.js"></script>
+      
+      <script src="com/controllers/navController.js"></script>
+      <script src="com/controllers/footerController.js"></script>
+	   <script src="com/controllers/underConstController.js"></script>
+	   <script src="com/controllers/topController.js"></script>
+	   <script src="com/controllers/homeController.js"></script>
+	   <script src="com/controllers/aboutController.js"></script>
+	   <script src="com/controllers/contactController.js"></script>
+	   <script src="com/controllers/programmeController.js"></script>
+	   <script src="com/controllers/sucessController.js"></script>
+	   <script src="com/controllers/updatesController.js"></script>
+	   <script src="com/controllers/involvedController.js"></script>
+	   <script src="com/controllers/contactController.js"></script>
+	   
+	   <script src="lib/bootstrap.js"></script>
+      <link href="css/bootstrap.css" rel="stylesheet" />
+      <link href="css/custom.css" rel="stylesheet" />
+      <link href="css/form.css" rel="stylesheet" />
+      <link href="css/footer.css" rel="stylesheet" />
+	   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	   <link href="css/font-awesome.css" rel="stylesheet" /> 
+	   
+   </head>
+   <body ng-app="app" ng-controller="topController">
+      <div class="container-fluid">
+         <div class="row" ng-controller= "navController" ng-include="'com/view/navTop.html'"></div>
+      </div>
+      <div class="container-fluid">
+         <div class="row">
+<!--            <div class="col-md-12">-->
+               <!-- Middle Content of all pages -->
+               <ng-view></ng-view>
+<!--            </div>-->
+         </div>
+      </div>
+	   <div class="container-fluid">
+         <div class="row" ng-controller= "footerController" ng-include="'com/view/footer.html'"></div>
+      </div>
+   </body>
+</html>

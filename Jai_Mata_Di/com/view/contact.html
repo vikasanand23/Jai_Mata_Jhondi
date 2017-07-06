@@ -1,0 +1,75 @@
+<hr />
+<div class="homeIntro">
+		<img ng-src="{{ bgImage }}" class="img-responsive" align="absmiddle" />
+</div>
+<div class="container">
+<div class="row">
+	<!-- {{countryDetails | json}} -->
+	<div class="col-md-12" id="myModal">
+		<ul ng-repeat="details in countryDetails">
+			<li>
+				<h1> {{ details.name }}</h1>
+				<h5> {{ details.designation }}</h5>
+				<h5> {{ details.occuptation }}</h5>
+				<h5> {{ details.address }}</h5>
+				<h5> {{ details.address1 }}</h5>
+				<h5> {{ details.address2 }}</h5>
+				<h5> {{ details.area }}</h5>
+				<h5> {{ details.postel }}</h5>
+				<h5> <span class="glyphicon glyphicon-phone-alt"></span> {{ details.contact }}</h5>
+			</li>
+		</ul>
+	</div>
+</div>
+
+	<hr />
+	<div class="row">
+		<div class="col-md-3">
+			<div class="contactFormLeft">
+				<img src="images/contact_Side.jpg" class="img-responsive center-block" />
+				<h1>Please fill the details</h1>
+				
+				<h6>Please send us the details. So that we can reach you..</h6>
+			</div>
+			
+			<div class="maphead">
+				<h5>Click Location Icons below to get the details:</h5>
+				<div id="map"></div>
+			</div>
+			
+		</div>
+		<div class="col-md-9">
+			<form class="form-inline">
+				  <div class="form-group">
+				    <label for="exampleInputName1">First Name</label>
+				    <input type="text" class="form-control" id="exampleInputName2" onfocus="if(this.value == 'Vikas') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Vikas'; }" value="Vikas">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputName2">Last Name</label>
+				    <input type="text" class="form-control" id="exampleInputName2" onfocus="if(this.value == 'Anand') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Anand'; }" value="Anand">
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="exampleInputEmail2">Email</label>
+				    <input type="email" class="form-control" id="exampleInputEmail2" onfocus="if(this.value == 'vikas.anand@example.com') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'vikas.anand@example.com'; }" value="vikas.anand@example.com" >
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputName2">Contact Number</label>
+				    <input type="text" class="form-control" id="exampleInputName2" onfocus="if(this.value == '+91') { this.value = ''; }" onblur="if(this.value == '') { this.value = '+91'; }" value="+91" >
+				  </div>
+				  <div class="form-group">
+				  	
+				  	<select class="form-control">
+					  <option>Business</option>
+					  <option>Media</option>
+					  <option>Ex-Employee Verification</option>
+					</select>
+				  </div>
+				  
+				  <textarea rows="6" onfocus="if(this.placeholder == 'Message') { this.placeholder = ''; }" onblur="if(this.placeholder == '') { this.placeholder = 'Message'; }" placeholder="Message"></textarea>
+				  
+				  <button type="submit" class="readBtn"><span class="glyphicon glyphicon-repeat"></span> Send</button>
+				</form>
+		</div>
+	</div>
+</div>
