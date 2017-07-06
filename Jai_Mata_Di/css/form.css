@@ -4,9 +4,11 @@
 
 #myModal ul{
 	list-style: none;
+/*
     width: 18%;
     display: inline-block;
     margin: 10px;
+*/
     background-color: #ebe9e9;
     padding: 10px;
     border-radius: 5px;
